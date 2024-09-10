@@ -1,0 +1,28 @@
+void main() { 
+  
+  //1.Feladat
+  String nev = "Szegedi SZC Vasvári Pál Gazdasági és Informatikai Technikum";
+   print(nev);
+  
+  //2.Feladat
+  int irszam = 6722;
+  String utca = "Guttember utca";
+  String telepules = "Szeged";
+  int hazszam = 11;
+  print("Az iskola neve és címe: $irszam $telepules $utca $hazszam ");
+  
+  //3.Feladat
+  int kilenc = 112;
+  int tiz = 84;
+  int tizenegy = 84;
+  int tizenketto = 84;
+  int tizenharom = 84;
+  int tizennegy = 84;
+  print("A 9. évfolyam létszáma: $kilenc");
+  print("A 10. évfolyam létszáma: $tiz");
+  print("A 11. évfolyam létszáma: $tizenegy");
+  print("A 12. évfolyam létszáma: $tizenketto");
+  print("A 13. évfolyam létszáma: $tizenharom");
+  print("A 14. évfolyam létszáma: $tizennegy");
+  
+}
