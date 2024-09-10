@@ -1,0 +1,25 @@
+void main() { 
+  
+  //1.Feladat
+  int intValue = 10;
+  double doubleValue= 10.2;
+  String strValue = "lila";
+  bool boolValue = true;
+  var intResult = intValue + doubleValue;
+  
+  //2.Feladat
+  print("Az eredmény: $intResult");
+  
+  //3.Feladat
+  //a változók értékei
+  /* a változók értékei*/
+  
+  print("intValue értéke: $intValue");
+  print("doubleValue értéke: $doubleValue");
+  print("strValue értéke: $strValue");
+  print("boolValue értéke: $boolValue");
+  
+  //4.Feladat
+  bool boolResult = !boolValue;
+  print(boolResult);
+}
