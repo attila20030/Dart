@@ -1,0 +1,10 @@
+void main() {
+  String text = "To be, or not to be, that is the question";
+
+  bool vanebenneBee = text.contains("bee");
+
+  bool vanebenneToBe = text.contains("to be");
+
+  print("The string contains 'bee': $vanebenneBee");
+  print("The string contains 'to be': $vanebenneToBe");
+}
