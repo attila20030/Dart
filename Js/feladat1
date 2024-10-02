@@ -1,0 +1,48 @@
+import input from './input.js'
+
+const a = await input('Kérem adjon meg egy számot: ');
+const b = await input('Kérem adjon meg egy másik számot: ');
+
+function kisebb(num1, num2){
+    if(num1 <= num2){
+        console.log('A ' + num1 + ' a kissebb')
+    }
+    else{
+        console.log('A ' + num2 + ' a kissebb')
+    }
+}
+
+function nagyobb(num1, num2){
+    if(num1 >= num2){
+        console.log('Az ' + num1 + ' nagyobb szám')
+    }
+    else{
+        console.log('A ' + num2 + ' a nagyobb szám')
+    }
+}
+
+
+function negyzet_e(num1, num2){
+    if(num1 == num2){
+        console.log('Négyzet')
+    }
+    else{
+        console.log('Téglalap!')
+    }
+}
+
+function kerulet(num1,num2){
+    kerulet = 2 * (num1, num2);
+    console.log('Kerület: ' + kerulet);
+}
+
+function terulet(num1,num2){
+    terulet = num1 * num2;
+    console.log('A területe: ' + terulet)
+}
+
+kisebb(a, b)
+nagyobb(a, b)
+negyzet_e(a,b)
+kerulet(a,b)
+terulet(a,b)
