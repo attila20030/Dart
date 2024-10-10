@@ -1,0 +1,35 @@
+import 'dart:io';
+
+void main(){
+  //1. Feladat
+  Set<String> week= {"hétfő","kedd","szerda","csütörtök","péntek","szombat","vasárnap"};
+
+  print("A week lista tartalma: ${week}");
+  print("A lista első eleme: ${week.first}");
+  print("A lista utolsó eleme: ${week.last}");
+  print("A lista üres-e: ${week.isEmpty}");
+  print("A week lista hossza: ${week.length}");
+  print("A week lista tartalmazza-e a szerda értékét: ${week.contains("szerda")}");
+  print("A lista tartalmazza-e a Wednesday értékét: ${week.contains("Wednesday")}");
+
+  //2. Feladat
+  List<String>another = ["workday", "weekend", "holiday", "public holiday", "bank holiday", "national holiday", "religious holiday", "federal holiday", "school holiday", "company holiday", "floating holiday", "seasonal holiday", "observed holiday", "half-day", "flexible day", "personal day", "sick day", "leave of absence", "vacation day", "remote workday"];
+  week.addAll(another);
+
+  //3.Feladat
+  for(int i = 0; i > another.length;i++){
+    print(another);
+  }
+  
+  Set<String> schoolDays = {'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'};
+
+  print("A week Set hossza: ${week.length}");
+  print("A schoolDays Set hossza: ${schoolDays.length}");
+
+  //5.Feladat
+  Set<String> different = week.toSet().difference(schoolDays);
+  print("A két lista külömbsége: ${different}");
+
+  List<int> szamok = [2,3,7,11,13];
+
+}
