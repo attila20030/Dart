@@ -1,0 +1,57 @@
+import 'dart:io';
+import 'dart:math';
+
+String getName(){
+    print("Kérlek add meg a neved:");
+    String? name  = stdin.readLineSync()!;
+    return name;
+}
+
+String welcome(String name){
+    return name + 'Üdvözöllek';
+}
+
+List<int> getRandomNumber(int szam1, int szam2) {
+  List<int> szamok = [];
+  Random rand = Random();
+  for (int i = 10; i < 50; i++) {
+    szamok.add(rand.nextInt((szam2 - szam1).abs()) + min(szam1, szam2));
+  }
+  return szamok;
+}
+
+int getPower(int szam1,int szam2){
+    return szam1;
+}
+
+bool isPrime(int szam1) {
+  if (szam1 <= 1) return false; 
+  if (szam1 == 2) return true;  
+
+  for (int i = 3; i * i <= szam1; i += 2) {
+    if (szam1 % i == 0) return false; 
+  }
+  return true; 
+}
+
+void main(){
+    print('${welcome("john")}');
+
+    print('Egy random szám 10 és 50 között: ${getRandomNumber(10,50)}');
+
+    print("Kérlek add meg az első egész számot:");
+    int szam1 = int.parse(stdin.readLineSync()!);
+
+    print("Kérlek add meg a második egész számot:");
+    int szam2 = int.parse(stdin.readLineSync()!);
+
+    print('A szám prímszám-e?: ${isPrime(szam1)}');
+
+    try {
+    print(getPower(2, 3)); 
+    print(getPower(-2, 2)); 
+    print(getPower(-2, 2));
+    } catch (e) {
+    print(e);
+    }
+}
