@@ -1,0 +1,32 @@
+void main(){
+  //Feladat1
+  List<int> fizzbuzz = [];
+  for(int i = 1; i < 101;i++){
+    if(i % 3 == 0 && i % 5 == 0){
+      fizzbuzz.add(i);
+    }
+    else if(i % 3 == 0){
+      fizzbuzz.add(i);
+    }
+    else if(i % 5 == 0){
+      fizzbuzz.add(i);
+    }
+  }
+  print(fizzbuzz);
+
+  //Feladat2
+  List<String> oddEven = [];
+  for(int i = 1;i < 101;i++){
+    if(i % 2 == 1){
+      oddEven.add("odd");
+    }
+    else if(i % 2 == 0){
+      oddEven.add("even");
+    }
+  }
+  print(oddEven);
+
+  //Feladat3
+  Set<int> oddSet = fizzbuzz.where((elem) => elem.isOdd).toSet();
+
+}
